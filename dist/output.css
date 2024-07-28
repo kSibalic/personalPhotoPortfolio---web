@@ -1317,7 +1317,7 @@ video {
 /* SERVICES */
 .ag-format-container {
   width: 1142px;
-  margin: -50px auto;
+  margin: 0 auto;
 }
 
 .ag-courses_box {
@@ -1361,8 +1361,10 @@ video {
 }
 
 .ag-courses-item_title {
-  min-height: 87px;
-  margin: 0 0 25px;
+  display: flex; /* Added */
+  align-items: center; /* Added */
+  min-height: 70px;
+  margin: 0px;
   overflow: hidden;
   font-weight: bold;
   font-size: 30px;
@@ -1372,15 +1374,15 @@ video {
 }
 
 .ag-courses-item_title img {
-  width: 40px; 
-  height: 40px;
-  margin-top: 10px; 
+  width: 1em; /* Proportional to the font size */
+  height: 1em; /* Proportional to the font size */
+  margin-right: 0.5em;
   filter: brightness(0) invert(1);
-  transition: transform 0.5s ease; 
+  transition: transform 0.5s ease; /* Added transition for animation */
 }
 
 .ag-courses-item_link:hover .ag-courses-item_title img {
-  transform: rotate(360deg); 
+  transform: rotate(360deg); /* Animation on hover */
 }
 
 .ag-courses-item_date-box {
